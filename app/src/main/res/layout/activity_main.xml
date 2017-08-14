@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,6 +8,7 @@
 
 
     <LinearLayout
+        android:background="#fff"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -25,27 +26,281 @@
 
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:textColor="#575556"
                 android:textSize="20dp"
                 android:text="الماكدونالدز" />
         </LinearLayout> <!-- vertical  I - horizontal -->
 
-        <android.support.v4.view.ViewPager
-            android:id="@+id/viewPageAndroid"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" >
 
-    </android.support.v4.view.ViewPager>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPageAndroid"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" >
+
+            </android.support.v4.view.ViewPager>
+        </LinearLayout> <!-- vertical  I - horizontal -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/f6min"
+                android:textColor="#fff"
+                android:drawableLeft="@drawable/f7min"
+                 android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:text="Call" />
+
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/f8min"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:drawableLeft="@drawable/f9min"
+                android:text="Location" />
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dRes"
+            android:textColor="#575556"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ebebeb"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#575556"
+
+                android:id="@+id/HourDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:text="@string/OpenHour" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ebebeb"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+         android:padding="20dp">
+
+            <TextView
+
+                android:textColor="#575556"
+
+                android:id="@+id/follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="22dp"
+                android:paddingRight="20dp"
+                android:text="@string/follow" />
+
+            <ImageButton
+                android:id="@+id/fb"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#fff"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/f10min"
+                android:layout_weight="1"
+                android:scaleType="fitStart" />
+
+
+            <ImageButton
+                android:id="@+id/insta"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#fff"
+                app:srcCompat="@drawable/f11min"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+
+                android:scaleType="fitStart" />
+            <ImageButton
+                android:id="@+id/google"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#fff"
+                app:srcCompat="@drawable/f12min"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="1"
+                android:scaleType="fitStart" />
+
+            <ImageButton
+                android:id="@+id/twitter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#fff"
+                app:srcCompat="@drawable/f13min"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="1"
+                android:scaleType="fitStart" />
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e5e5e5"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#575556"
+                android:textSize="20dp"
+                android:text="2 تعليق" />
+        </LinearLayout> <!-- vertical  I - horizontal -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/passwordReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:background="@drawable/edittext_rounded_corners"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="Add Comment ...  "
+                android:maxLines="1"
+                android:paddingBottom="13dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="13dp"
+                android:scrollHorizontally="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#5f5d5e" />
+
+
+
+
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button5"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="add"
+                android:layout_marginRight="20dp"
+                android:textColor="#fff" />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+
 
 
 
 
     </LinearLayout>  <!-- vertical  I-->
-</RelativeLayout>
+</ScrollView>
